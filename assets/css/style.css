@@ -1,0 +1,301 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html { min-height: 100%; }
+
+body {
+  background: #1c92d2;
+  background: -webkit-linear-gradient(to bottom, #1c92d2, #f2fcfe);
+  background: -webkit-linear-gradient(top, #1c92d2, #f2fcfe);
+  background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+  color: #6e6e6e;
+  font-family: 'Cabin', sans-serif;
+}
+
+.container {
+  background-color: rgba(252, 252, 252, .9);
+  border-radius: 2em;  
+  box-shadow: 0 .5em 1em rgba(0, 0, 0, .125);
+  margin: 4.5em auto;
+  max-width: 900px;
+  overflow: hidden;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  background: -webkit-linear-gradient(left, #f2fcfe, #1c92d2, #3caae5),
+              url('../img/checklist.jpeg') no-repeat;
+  background: linear-gradient(90deg, #f2fcfe, #1c92d2, #3caae5),
+              url('../img/checklist.jpeg') no-repeat;
+              background-blend-mode: multiply;
+              background-position: center;
+              background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  line-height: .65;
+  margin: .1em 0 0 0;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.lead {
+  color: #fff;
+  font-size: 1.15em;
+  line-height: 1.5;
+  text-shadow: 0 .1em 0 rgba(0, 0, 0, .3);
+}
+
+form {
+  background-color: #fff;
+  border-radius: 2em;
+  border: solid 5px white;
+  box-shadow: 0 .5em 1em rgba(0, 0, 0, .125);
+  display: inline-block;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+}
+
+form input {
+  font-size: 1.15em;
+  padding: .75em;
+  width: 100%;
+}
+
+form button {
+  background-color: rgba(67, 151, 222, 1);
+  border-radius: 2em;
+  color: #fff;
+  font-size: 1em;
+  padding: 0 1em;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+form button:hover { background-color: rgba(67, 151, 222, .8); }
+
+button { cursor: pointer; }
+
+input, 
+button {
+  border: none;
+  outline: none;
+}
+
+.main { 
+  padding: 3em 1em 1em;
+  position: relative;
+  z-index: 10;
+}
+
+h2 {
+  color: rgba(67, 151, 222, 1);
+  margin-top: 0;
+  font-family: 'Lobster', cursive;
+  text-shadow: 0 .1em 0 rgba(0, 0, 0, .125);
+}
+
+#filterLabel { text-shadow: 1px 1px 1px rgba(150, 150, 150, .2); }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+
+ul li {
+  background: #fff;
+  border-radius: 1em;
+  border: solid 2px rgba(28, 146, 210, .2);
+  border-bottom: solid 3px rgba(28, 146, 210, .3);
+  padding: 1em;
+  position: relative;
+}
+
+li span, 
+li input[type=text] {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+li span, 
+li input[type=text]:first-child {
+  display: block;
+}
+
+li input[type=text] {
+  border-bottom: 1px dotted rgba(0, 0, 0, .3);
+  padding: .2em;
+  width: 95%;
+}
+
+li label {
+  color: rgba(169, 169, 169, 1);
+  display: block;
+  font-size: .9em;
+}
+
+li button {
+  background-color: rgba(67, 151, 222, .5);
+  border-radius: .5em;
+  box-shadow: 0 .25em #d6dcdc;
+  color: #fff;
+  font-size: .8em;
+  margin-top: 1.35em;
+  margin-right: .5em;
+  padding: .5em;
+  text-shadow: .2em .2em .3em rgba(0, 0, 0, .2);
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+li button:hover{ background-color: rgba(67, 151, 222, .7); }
+
+li button:active {
+  background-color: rgba(67, 151, 222, 1);
+  box-shadow: 0 .1em #d6dcdc;
+  -webkit-transform: translateY(.25em);
+          transform: translateY(.25em);
+}
+
+li button:last-child { 
+  background-color: rgba(216, 11, 19, .5);
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+li button:last-child:hover { background-color: rgba(216, 11, 19, .7); }
+
+li button:last-child:hover { background-color: rgba(216, 11, 19, 1); }
+
+.checked {
+  border-color: rgba(67, 151, 222, .9);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.checked label {
+  color: rgba(67, 151, 222, 1);
+  -webkit-transition: .4s;
+          transition: .4s;
+}
+
+
+
+/************************ 
+      MEDIA QUERIES
+************************/
+
+@media (min-width: 0) and (max-width: 768px) {
+  .container {
+    margin: 4em auto;
+    width: 90%;
+  }
+
+  header { padding: 2em; }
+
+  h1 {
+    font-size: 3.5em;
+    margin: .5em 0 0;
+  }
+
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    margin-top: 2em;
+    width: 90%;
+  }
+
+  form input {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  form button {
+    padding: 1em 0;
+    margin-top: .4em;
+  }
+
+  ul li { margin-bottom: 1.5em; }
+}
+
+@media (min-width: 769px) {
+  .container { width: 90%; }
+
+  header {
+    height: 295px;
+    padding: 2.5em 1em 1em;
+  }
+
+  h1 { font-size: 5em; }
+
+  form {
+    margin: 4em auto;
+    position: relative;
+    z-index: 999;
+  }
+
+  .main > div {
+    display: inline-block;
+    float: right;
+    margin-top: 1em;
+    margin-right: 2%;
+  }
+
+  h2 {
+    float: left;
+    font-size: 2.5em;
+    margin-left: 2%;
+  }
+
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1em;
+  }
+
+  ul li {
+    -ms-flex-preferred-size: 47.5%;
+        flex-basis: 47.5%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    margin: 0 1.25% 1em;
+  }
+}
+
+@media (min-width: 880px) {
+  ul li { 
+    -ms-flex-preferred-size: 20%; 
+    flex-basis: 20%;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Lobster fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!-- Cabin fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+  <!-- style.css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- font-awesome.min.css -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- favicon -->
+  <link rel="icon" href="assets/favicons/favicon.ico">
+  <title>CheckList</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>
+        CheckList
+        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+      </h1>
+      <p class="lead">
+        Type anything you want. 
+        <br>
+        Then hit the submit button.
+      </p>
+      <form id="enter">
+        <input type="text" name="name" placeholder="What's on your mind?"> 
+        <button type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </header>
+
+    <div class="main">
+      <h2>List</h2>
+
+      <div id="filterDiv">
+        <label id="filterLabel">Hide what is not checked</label>
+        <input type="checkbox">
+      </div>
+      
+      <ul id="list">
+        
+        <!-- 
+        <li>
+          <span>"Text from input.value"</span>
+          <label>
+            Check
+            <input type="checkbox">
+          </label>
+          <button>Edit</button>
+          <button>Remove</button>
+        </li>
+        -->
+
+        <!-- 
+        <li>
+          <input type="text">
+          <label>
+            Check
+            <input type="checkbox">
+          </label>
+          <button>Save</button>
+          <button>Remove</button>
+        </li> 
+        -->
+
+      </ul>
+    </div>
+  </div>
+  
+  <!-- script.js -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
